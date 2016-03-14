@@ -1,0 +1,19 @@
+{
+  "name": "e2eTesting",
+  "version": "0.1.0",
+  "description": "Sainsbury's Entertainment Website",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:anobii/automation.git"
+  },
+  "devDependencies": {
+     "jasmine-expect": "2.0.0-beta1",
+     "lodash": "3.10.0",
+     "protractor": "^3.0.0"
+ },
+  "scripts": {
+    "update-webdriver": "webdriver-manager update",
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor config.js"
+  }
+}
