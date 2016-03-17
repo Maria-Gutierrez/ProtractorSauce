@@ -14,6 +14,6 @@
   "scripts": {
     "update-webdriver": "webdriver-manager update",
     "preprotractor": "npm run update-webdriver",
-    "protractor": "protractor config.js"
+    "protractor": "protractor e2e/config.js"
   }
 }

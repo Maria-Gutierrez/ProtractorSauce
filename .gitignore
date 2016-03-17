@@ -1,0 +1,12 @@
+node_modules/
+.idea
+
+npm-debug.log
+
+test/e2e/npm-debug.log
+
+credentials.js
+
+.DS_Store
+
+sc-4.3.13-osx
