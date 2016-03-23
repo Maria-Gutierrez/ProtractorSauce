@@ -20,6 +20,7 @@ exports.config = {
     'version': '46.0',
     'maxInstances': '3',
     'shardTestFiles': 'true',
+    //pass this if using on a Jenkins job
     'tunnel-identifier': process.env.TUNNEL_IDENTIFIER
   },
   {
@@ -29,6 +30,7 @@ exports.config = {
     'version': '42.0',
     'maxInstances': '3',
     'shardTestFiles': 'true',
+    //pass this if using on a Jenkins job
     'tunnel-identifier': process.env.TUNNEL_IDENTIFIER
   },
   ],
