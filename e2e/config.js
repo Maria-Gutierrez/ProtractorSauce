@@ -5,20 +5,13 @@
 exports.config = {
 
   //== Saucelabs config ==
-  sauceUser: 'qase' ,
-  sauceKey: '2ce2370c-cfc5-4916-bd70-b05b1ec316a8',
+  sauceUser: 'username' ,
+  sauceKey: 'APIkey',
   sauceSeleniumAddress:'ondemand.saucelabs.com:80/wd/hub',
 
   specs: [
    './test/checkoutSpec.js'
   ],
-
-  // capabilities: {
-  //   name: 'qase Job',
-  //   'browserName': 'chrome',
-  //   'shardTestFiles': 'true',
-  //   'maxInstances': '1',
-  // },
 
    multiCapabilities: [{
     'name': 'OS X 10.11, chrome, 46.0',
@@ -40,14 +33,12 @@ exports.config = {
   },
   ],
 
-  baseUrl: 'http://uat-www.ents.io/',
+  baseUrl: 'http://myUrl',
   framework: 'jasmine2',
 
   //Options to be passed to Jasmine-node.
 
   jasmineNodeOpts: {
-    // onComplete will be called just before the driver quits.
-    onComplete: null,
     // If true, display spec names.
     isVerbose: true,
     showColors: true,
