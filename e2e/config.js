@@ -6,7 +6,7 @@ exports.config = {
 
   //== Saucelabs config ==
   sauceUser: 'qase' ,
-  sauceKey: '2ce2370c-cfc5-4916-bd70-b05b1ec316a8',
+  sauceKey: 'Saucekey',
   sauceSeleniumAddress:'ondemand.saucelabs.com:80/wd/hub',
 
   specs: [
