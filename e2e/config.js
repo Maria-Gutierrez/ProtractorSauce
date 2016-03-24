@@ -5,8 +5,8 @@
 exports.config = {
 
   //== Saucelabs config ==
-  sauceUser: 'username' ,
-  sauceKey: 'APIkey',
+  sauceUser: 'qase' ,
+  sauceKey: 'Saucekey',
   sauceSeleniumAddress:'ondemand.saucelabs.com:80/wd/hub',
 
   specs: [
@@ -20,27 +20,18 @@ exports.config = {
     'version': '46.0',
     'maxInstances': '3',
     'shardTestFiles': 'true',
-    //pass this if using on a Jenkins job
     'tunnel-identifier': process.env.TUNNEL_IDENTIFIER
-  },
-  {
-    'name': 'Windows 8.1, firefox, 42.0',
-    'browserName': 'firefox',
-    'platform': 'Windows 8.1',
-    'version': '42.0',
-    'maxInstances': '3',
-    'shardTestFiles': 'true',
-    //pass this if using on a Jenkins job
-    'tunnel-identifier': process.env.TUNNEL_IDENTIFIER
-  },
+  }
   ],
 
-  baseUrl: 'http://myUrl',
+  baseUrl: 'http://uat-www.ents.io/',
   framework: 'jasmine2',
 
   //Options to be passed to Jasmine-node.
 
   jasmineNodeOpts: {
+    // onComplete will be called just before the driver quits.
+    onComplete: null,
     // If true, display spec names.
     isVerbose: true,
     showColors: true,

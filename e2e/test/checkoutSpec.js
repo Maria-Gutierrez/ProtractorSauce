@@ -53,26 +53,4 @@ describe('Checkout from basket', function () {
     expect(basket.lblCVCBasketErrorMsg.isDisplayed()).toBe(true);
   });
 
-  // it('should allow user to make a purchase', function () {
-  //   GoToLogin();
-  //   register.CreateRandomAccountStandAlone();
-  //   browser.waitForAngular();
-  //   GoToEbooks();
-  //   searchBox.Search('Test epub');
-  //   searchBox.PickBook();
-  //
-  //   basket.btnCheckOutWithCard.click();
-  //   browser.sleep(1000);
-  //   checkout.FillCheckoutForm(
-  //     credentials.ccNumber,
-  //     credentials.ccName,
-  //     credentials.ccExpiryMonth,
-  //     credentials.ccExpiryYear,
-  //     credentials.ccSecurityCode
-  //   );
-  //   basket.chkTermsDigitalProduct.click();
-  //   basket.btnCompletePurchase.click();
-  //   browser.waitForAngular();
-  //   expect(browser.getTitle()).toContain('Confirmation');
-  // });
 });
